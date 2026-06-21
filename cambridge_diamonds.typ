@@ -1,0 +1,98 @@
+#set page(
+  paper: "a4",
+  margin: (x: 1.5cm, y:1.8cm),
+  header: align(right)[
+    #text(size: 8pt, fill: rgb("#718096"), font: "Inter")[Hildelith the Weaver]
+  ],
+  footer: [
+    #line(length: 100%, stroke: 0.5pt + rgb("#e2e8f0"))
+    #grid(
+      columns: (1fr, 1fr),
+      text(size: 8pt, fill: rgb("#a0aec0"))[Pattern by hildeliththeweaver.com],
+      align(right, text(size: 8pt, fill: rgb("a0aec0"))[Drafted with TWDD])
+    )
+  ]
+)
+#set text(font: "Inter", size: 10pt, fill: rgb("#2d3748"))
+#set par(justify: true, leading: 0.65em)
+
+#show heading: set text(font: "Libertinus Serif", fill: rgb("#1a365d"))
+#show heading.where(level: 1): it => block(below: 0.8em)[
+  #set text(weight: "regular", size: 20pt)
+  #it.body
+  #v(-0.4em)
+  #line(length: 100%, stroke: 1.5pt + rgb("#2b6cb0"))
+]
+#show heading.where(level: 2): set text(size: 13pt, weight: "bold")
+
+#align(center)[
+  #image("logo_clear.png", width: 30%)
+]
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+= Cambridge Diamonds
+#v(0.5em)
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 1.5cm,
+  [
+    *Pattern Details:* \
+    - *Tablet Count:* 12 Pattern, 4 Border (2 per side) \
+    - *Material:* 20/2 Silk or fine linen \
+    - *Structure:* 4-hole double-face warp-faced weave
+    - *Dimensions*: 1cm wide
+  ],
+  [
+    *Source & Context:* \
+    Reconstruction based on the 10th-century grave finds from Birka, Sweden. Features a striking geometric diamond motif typical of Viking Age elite garments.
+  ]
+)
+
+#v(1.5em)
+
+== 1. Threading Pattern
+
+#rect(
+  width: 100%,
+  fill: rgb("#f7fafc"),
+  stroke: (left: 3pt + rgb("#2b6cb0")),
+  radius: (right: 4pt),
+  inset: 11pt
+)[
+  #text(weight: "bold", fill: rgb("#2c5282"))[Pro-Tip:] Always check your S/Z slant before tensioning the loom. Pattern integrity relies entirely on the initial orientation of your cards.
+]
+
+#v(1em)
+#align(center)[
+  // Replace with your actual exported TWDD/Seizenn graphic
+  #rect(stroke: 0.5pt + rgb("#cbd5e0"), radius: 4pt, inset: 10pt)[
+    #image("logo.png", width: 90%)
+  ]
+]
+
+#v(1.5em)
+
+== 2. Tablet Orientation
+
+#v(1.5em)
+
+== 3. Turning Sequence
+
+// Clean, modern table layout with minimal borders
+#set table(
+  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + rgb("#1a365d")) } else { (bottom: 0.5pt + rgb("#e2e8f0")) },
+  fill: (x, y) => if y == 0 { rgb("#ebf8ff") } else if calc.even(y) { rgb("#f7fafc") } else { none }
+)
+
+#align(center)[
+  #table(
+    columns: (1fr, 2fr, 2fr),
+    align: (center, left, left),
+    [*Picks*], [*Pattern Tablets (1-12)*], [*Border Tablets (A-D)*],
+    [1–4], [Continuous Forward (F)], [Continuous Forward (F)],
+    [5–8], [Continuous Backward (B)], [Continuous Forward (F)],
+    [9–12], [4F, 4B (Alternating)], [Continuous Forward (F)],
+  )
+]
