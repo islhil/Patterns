@@ -9,7 +9,7 @@
     #grid(
       columns: (1fr, 1fr),
       text(size: 8pt, fill: rgb("#a0aec0"))[Pattern by hildeliththeweaver.com],
-      align(right, text(size: 8pt, fill: rgb("a0aec0"))[Drafted with TWDD])
+      align(right, text(size: 8pt, fill: rgb("a0aec0"))[Cambridge Diamonds])
     )
   ]
 )
@@ -38,15 +38,16 @@
   columns: (1fr, 1fr),
   gutter: 1.5cm,
   [
-    *Pattern Details:* \
-    - *Tablet Count:* 12 Pattern, 4 Border (2 per side) \
-    - *Material:* 20/2 Silk or fine linen \
-    - *Structure:* 4-hole double-face warp-faced weave
+    *Pattern Details:*
+    - *Tablet Count:* 14 Pattern, 2 Border on each side
+    - *Material:* Probably Linen
+    - *Structure:* 4-hole idle pack weave
     - *Dimensions*: 1cm wide
   ],
   [
-    *Source & Context:* \
-    Reconstruction based on the 10th-century grave finds from Birka, Sweden. Features a striking geometric diamond motif typical of Viking Age elite garments.
+    *Source & Context:*
+    Reconstruction based on the supposed 6thth-century grave finds from St John's Cricket Fielf Cemetery, Cambridge.
+
   ]
 )
 
@@ -124,9 +125,9 @@
 
 #v(1.5em)
 
-== 2. Tablet Orientation
+// == 2. Tablet Orientation
 
-#v(1.5em)
+// #v(1.5em)
 
 // == 3. Turning Sequence
 
