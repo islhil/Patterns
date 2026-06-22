@@ -128,21 +128,21 @@
 
 #v(1.5em)
 
-== 3. Turning Sequence
+// == 3. Turning Sequence
 
 // Clean, modern table layout with minimal borders
-#set table(
-  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + rgb("#1a365d")) } else { (bottom: 0.5pt + rgb("#e2e8f0")) },
-  fill: (x, y) => if y == 0 { rgb("#ebf8ff") } else if calc.even(y) { rgb("#f7fafc") } else { none }
-)
+// #set table(
+  // stroke: (x, y) => if y == 0 { (bottom: 1.5pt + rgb("#1a365d")) } else { (bottom: 0.5pt + rgb("#e2e8f0")) },
+  // fill: (x, y) => if y == 0 { rgb("#ebf8ff") } else if calc.even(y) { rgb("#f7fafc") } else { none }
+// )
 
-#align(center)[
-  #table(
-    columns: (1fr, 2fr, 2fr),
-    align: (center, left, left),
-    [*Picks*], [*Pattern Tablets (1-12)*], [*Border Tablets (A-D)*],
-    [1–4], [Continuous Forward (F)], [Continuous Forward (F)],
-    [5–8], [Continuous Backward (B)], [Continuous Forward (F)],
-    [9–12], [4F, 4B (Alternating)], [Continuous Forward (F)],
-  )
-]
+// #align(center)[
+  // #table(
+    // columns: (1fr, 2fr, 2fr),
+    // align: (center, left, left),
+    // [*Picks*], [*Pattern Tablets (1-12)*], [*Border Tablets (A-D)*],
+    // [1–4], [Continuous Forward (F)], [Continuous Forward (F)],
+    // [5–8], [Continuous Backward (B)], [Continuous Forward (F)],
+    // [9–12], [4F, 4B (Alternating)], [Continuous Forward (F)],
+  // )
+// ]
