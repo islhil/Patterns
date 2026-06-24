@@ -57,71 +57,11 @@
 
 #v(1em)
 
-// Define the colors from the image
-#let dark-blue = rgb("0020e0")
-#let light-blue = rgb("60b6fb")
-#let white = rgb("ffffff")
+#align(center)[
+  #image("CambridgeDiamonds.svg", width: 100%)
+]
 
-// Helper function to create the angled tablets/threads
-#let display_thread(color, twist) = {
-  let angle = if twist == "Z" { -45deg } else { 45deg }
-  rotate(angle, ellipse(
-    width: 22pt,
-    height: 10pt,
-    fill: color,
-    stroke: 0.5pt + black
-  ))
-}
-
-#let display_orientation(twist) = {
-  let orientation = if twist == "Z" { sym.slash } else { sym.backslash }
-  set text(font: "Inter", weight: "bold", size: 18pt)
-  orientation
-}
-
-// Main grid setup
-#table(
-  columns: (20pt, ..range(18).map(_ => 25pt)),
-  align: center + horizon,
-  stroke: none,
-  row-gutter: 3pt,
-
-  // Column Numbers (1 to 18)
-  [], ..range(1, 19).map(i => [*#i*]),
-
-  // Row D
-  [*D*], display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"),
-        display_thread(white, "Z"), display_thread(white, "S"), display_thread(white, "Z"), display_thread(dark-blue, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"),
-
-  // Row C
-  [*C*], display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(white, "Z"), display_thread(white, "S"),
-        display_thread(light-blue, "Z"), display_thread(light-blue, "S"), display_thread(light-blue, "Z"), display_thread(white, "S"),
-        display_thread(white, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"),
-
-  // Row B
-  [*B*], display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(white, "S"), display_thread(white, "Z"), display_thread(light-blue, "S"),
-        display_thread(light-blue, "Z"), display_thread(light-blue, "S"), display_thread(light-blue, "Z"), display_thread(light-blue, "S"),
-        display_thread(white, "Z"), display_thread(white, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"),
-
-  // Row A
-  [*A*], display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(white, "Z"), display_thread(light-blue, "S"), display_thread(white, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"), display_thread(dark-blue, "Z"), display_thread(white, "S"),
-        display_thread(dark-blue, "Z"), display_thread(dark-blue, "S"),
-
-  // Twist Letters (Z / S alternating)
-  [], display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"),
-      display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"),
-      display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"), display_orientation("Z"), display_orientation("S"),
-)
+#v(1.5em)
 
 #v(1.5em)
 
