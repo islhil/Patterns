@@ -23,6 +23,8 @@
   ]
 )
 
+////////////////////////////////////////////////////////////////////////////////////////
+
 #v(1.5em)
 
 == 1. Threading Pattern
@@ -35,13 +37,32 @@
 
 #v(1.5em)
 
+////////////////////////////////////////////////////////////////////////////////////////
+
 #v(1.5em)
 
-// == 2. Tablet Orientation
+== 2. Tablet Orientation
 
-// #v(1.5em)
+#v(1.5em)
 
-// == 3. Turning Sequence
+// Add this to weaving.typ
+
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 16pt,
+  align: horizon,
+
+  image("Hole_Placementxcf.png", width: 100%),
+
+  text(weight: "bold", size: 1.1em)[
+    The threading instructions make the assumptions that:
+    - You the weaver are positioned with the warp threads moving away from you
+    - The tablets are facing the same way
+    - Hole A is the near top, and hole B is the near bottom
+  ],
+)
+
+ // == 3. Turning Sequence
 
 // Clean, modern table layout with minimal borders
 // #set table(
