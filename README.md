@@ -2,4 +2,4 @@
 
 ## Start dev watch
 
-typst watch cambridge_diamonds.typ
+typst watch cambridge_diamonds.typ --root ..
