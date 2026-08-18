@@ -11,14 +11,14 @@
   gutter: 1.5cm,
   [
     *Pattern Details:*
-    - *Tablet Count:* 14 Pattern, 2 Border on each side
-    - *Material:* Probably Linen
+    - *Tablet Count:* 11 Pattern, 7 Border
+    - *Material:* Probably linen
     - *Structure:* 4-hole idle pack weave
     - *Dimensions*: 1cm wide
   ],
   [
     *Source & Context:*
-    Reconstruction based on the supposed 6thth-century grave finds from St John's Cricket Fielf Cemetery, Cambridge.
+    Reconstruction based on the supposed 6th-century grave finds from St John's Cricket Fielf Cemetery, Cambridge.
 
   ]
 )
@@ -27,12 +27,10 @@
 
 #v(1.5em)
 
-== 1. Threading Pattern
-
-#v(1em)
+== Threading Pattern
 
 #align(center)[
-  #image("CambridgeDiamonds.svg", width: 100%)
+  #image("./CambridgeDiamonds.svg", width: 100%)
 ]
 
 #v(1.5em)
@@ -41,24 +39,22 @@
 
 #v(1.5em)
 
-== 2. Tablet Orientation
-
-#v(1.5em)
-
-// Add this to weaving.typ
+== Tablet Orientation
 
 #grid(
   columns: (1fr, 1fr),
   gutter: 16pt,
   align: horizon,
 
-  image("Hole_Placementxcf.png", width: 100%),
+  image("./Hole_Placementxcf.png", width: 100%),
 
   text(weight: "bold", size: 1.1em)[
     The threading instructions make the assumptions that:
-    - You the weaver are positioned with the warp threads moving away from you
-    - The tablets are facing the same way
-    - Hole A is the near top, and hole B is the near bottom
+    - You are positioned at the woven end of the project, with the warp threads stretching away from you
+    - If labelled, the tablets are all facing the same way
+    - The lettered side is facing the right
+    - Hole A is at the top, on the edge closet to you
+    - The hole labels are arrayed counterclockwise
   ],
 )
 

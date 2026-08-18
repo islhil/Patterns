@@ -15,7 +15,7 @@
       )
     ]
   )
-  set text(font: "Inter", size: 10pt, fill: rgb("#2d3748"))
+  set text(font: "Inter", size: 10pt, fill: rgb("#2d3748"), hyphenate: false)
   set par(justify: true, leading: 0.65em)
 
   show heading: set text(font: "Libertinus Serif", fill: rgb("#1a365d"))
