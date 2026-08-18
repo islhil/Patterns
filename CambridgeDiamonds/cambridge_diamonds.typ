@@ -18,7 +18,7 @@
   ],
   [
     *Source & Context:*
-    Reconstruction based on the supposed 6th-century grave finds from St John's Cricket Fielf Cemetery, Cambridge.
+    Reconstruction based on the supposed 6th-century grave finds from St John's Cricket Field Cemetery, Cambridge.
 
   ]
 )
