@@ -31,5 +31,10 @@
     #image("logo_clear.png", width: 30%)
   ]
 
+  set table(
+  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + rgb("#1a365d")) } else { (bottom: 0.5pt + rgb("#e2e8f0")) },
+  fill: (x, y) => if y == 0 { rgb("#ebf8ff") } else if calc.even(y) { rgb("#f7fafc") } else { none }
+)
+
   doc
 }
