@@ -11,15 +11,15 @@
   gutter: 1.5cm,
   [
     *Pattern Details:*
-    - *Tablet Count:* 11 Pattern, 7 Border
-    - *Material:* Probably linen
     - *Structure:* 4-hole idle pack weave
-    - *Dimensions*: 1cm wide
+    - *Material:* Probably linen
+    - *Tablet Count:* 18 Pattern
+    - *Dimensions:* 1cm wide
+    - *Colours:* Dark blue, lighter blue and white
   ],
   [
     *Source & Context:*
     Reconstruction based on the supposed 6th-century grave finds from St John's Cricket Field Cemetery, Cambridge.
-
   ]
 )
 
@@ -72,8 +72,9 @@
     columns: (1fr, 2fr, 2fr),
     align: (center, left, left),
     [*Picks*], [*Pattern Tablets (1-12)*], [*Border Tablets (A-D)*],
-    [1–4], [Continuous Forward (F)], [Continuous Forward (F)],
-    [5–8], [Continuous Backward (B)], [Continuous Forward (F)],
-    [9–12], [4F, 4B (Alternating)], [Continuous Forward (F)],
+    [1], [Continuous Forward (F)], [Continuous Forward (F)],
+    [2], [Continuous Backward (B)], [Continuous Forward (F)],
   )
 ]
+
+////////////////////////////////////////////////////////////////////////////////////////
