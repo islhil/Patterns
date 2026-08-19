@@ -4,22 +4,31 @@
 ////////////////////////////////////////////////////////////////////////////////////////
 
 = Cambridge Diamonds
-#v(0.5em)
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+#v(1.5em)
+
+== Information
 
 #grid(
   columns: (1fr, 1fr),
-  gutter: 1.5cm,
+  inset: 10pt,
+  column-gutter: 1.5cm,
   [
-    *Pattern Details:*
+    === Pattern details
     - *Structure:* 4-hole idle pack weave
-    - *Material:* Probably linen
+    - *Material:* Linen or hemp
     - *Tablet Count:* 18 Pattern
     - *Dimensions:* 1cm wide
-    - *Colours:* Dark blue, lighter blue and white
+    - *Colours:* White, blueish-green, and indigo
   ],
+  grid.cell(rowspan: 2)[#image("./CambridgeDiamondsOriginal.png")],
   [
-    *Source & Context:*
-    Reconstruction based on the supposed 6th-century grave finds from St John's Cricket Field Cemetery, Cambridge.
+    === Source and context
+    Reconstruction based on the supposed 6th-century grave finds from St John's College Cricket Field Cemetery, Cambridge.
+    A tablet woven braid of very pale blueigh-green colour, with repeeated diamond pattern. The diamond is outlined in
+    white, with one complete diamond in the centre and a white line along each side.
   ]
 )
 
@@ -39,7 +48,7 @@
 
 #v(1.5em)
 
-== Tablet Orientation
+== Tablet Orientation and Labelling
 
 #grid(
   columns: (1fr, 1fr),
@@ -58,22 +67,39 @@
   ],
 )
 
-#pagebreak()
+// #pagebreak()
+
+#v(1.5em)
 
 == Turning Sequence
 
-#set table(
-  stroke: (x, y) => if y == 0 { (bottom: 1.5pt + rgb("#1a365d")) } else { (bottom: 0.5pt + rgb("#e2e8f0")) },
-  fill: (x, y) => if y == 0 { rgb("#ebf8ff") } else if calc.even(y) { rgb("#f7fafc") } else { none }
-)
+#v(1.0em)
 
 #align(center)[
   #table(
-    columns: (1fr, 2fr, 2fr),
-    align: (center, left, left),
-    [*Picks*], [*Pattern Tablets (1-12)*], [*Border Tablets (A-D)*],
-    [1], [Continuous Forward (F)], [Continuous Forward (F)],
-    [2], [Continuous Backward (B)], [Continuous Forward (F)],
+    columns: (1fr, 9fr),
+    align: (left, left),
+    [*Steps*],[*Instructions*],
+    [1], [Separate all the odd tablets by moving them forwards a bit],
+    [2], [For the 1st pick, pass the weft through the shed from right to left],
+    [3], [Turn only the odd tablets forwards a quarter turn, and do not touch the even tablets],
+    [4], [For the 2nd pick, pass the weft through the shed from left to right],
+    [5], [Turn only the even tablets forwards a quarter turn, and do not touch the odd tablets],
+    [6], [Repeat steps 2 to 5]
+  )
+]
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+#v(1.0em)
+
+#align(center)[
+  #table(
+    columns: (1fr),
+    align: (left),
+    [*Notes*],
+    [To help know whether to turn the odd or even pack of tablets, check if you're passing the weft from left or the reverse],
+    [As you're dealing with 2 packs, make sure the wrong warp threads don't get snagged by accident when passing the weft],
   )
 ]
 
